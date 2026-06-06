@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #D31313;
+  --color-brand-red-neon: #FF1E1E;
+  --color-brand-black: #030305;
+  --color-brand-charcoal: #08080C;
+
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-brand-black);
+  color: white;
+  direction: rtl; /* Setting RTL for Arabic */
+}
+
+/* Custom Utilities for Glassmorphism & Effects */
+.glass-panel {
+  background: rgba(8, 8, 12, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 30, 30, 0.15);
+}
+
+.text-neon-glow {
+  text-shadow: 0 0 10px rgba(255, 30, 30, 0.7), 0 0 20px rgba(255, 30, 30, 0.5);
+}
+
+.box-neon-glow {
+  box-shadow: 0 0 15px rgba(255, 30, 30, 0.2), inset 0 0 15px rgba(255, 30, 30, 0.05);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-charcoal);
+  border: 1px solid rgba(255, 30, 30, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-red);
+}

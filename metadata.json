@@ -1,0 +1,8 @@
+{
+  "name": "عفيف للابتوب - Afif Laptop",
+  "description": "Premium High-End IT & Hardware Architecture",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
